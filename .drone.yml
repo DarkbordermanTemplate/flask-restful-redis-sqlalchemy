@@ -1,0 +1,11 @@
+---
+kind: pipeline
+name: flask-template
+
+steps:
+  - name: lint and test python functions
+    image: kennethreitz/pipenv:latest
+    commands:
+      - make init
+      - make lint
+      - make test
