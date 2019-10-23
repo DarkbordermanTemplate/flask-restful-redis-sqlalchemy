@@ -10,8 +10,8 @@ class Config:
     SQLALCHEMY_DATABASE_URI = os.environ.get(
         'POSTGRES_URI', 'postgresql://user:password@localhost:5432/template_db'
     )
-    REDIS_DATABASE_URI = os.environ.get(
-        'REDIS_URI', 'redis://:password@localhost:6379/0'
+    REDIS_URL = os.environ.get(
+        'REDIS_URL', 'redis://:password@localhost:6379/0'
     )
 
 
